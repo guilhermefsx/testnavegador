@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste de Equação</title>
+</head>
+<body>
+    <h1>Teste de Equação</h1>
+    <p>Resolva a seguinte equação: 2 * 2</p>
+    <input type="text" id="resposta" placeholder="Insira sua resposta">
+    <button onclick="verificarResposta()">Verificar</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function verificarResposta() {
+            var resposta = document.getElementById("resposta").value;
+            if (resposta == 4) {
+                document.getElementById("mensagem").innerHTML = "Correto, o usuário pode logar.";
+            } else {
+                document.getElementById("mensagem").innerHTML = "Informação incorreta.";
+            }
+        }
+    </script>
+</body>
+</html>
